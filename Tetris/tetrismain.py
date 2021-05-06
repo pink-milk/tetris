@@ -19,7 +19,7 @@ block_size = 30
 top_left_x = (s_width - play_width) // 2
 top_left_y = s_height - play_height
 
-///Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+#///Library/Frameworks/Python.framework/Versions/3.7/bin/python3
 # SHAPE FORMATS
 
 S = [['.....',
@@ -378,7 +378,7 @@ def main():
     pygame.time.delay(2000)
 
 
-def main_menu():
+def main_menu(): #main menu page
     run = True
     while run:
         win.fill((0,0,0))
@@ -393,7 +393,7 @@ def main_menu():
     pygame.quit()
 
 
-win = pygame.display.set_mode((s_width, s_height))
+win = pygame.display.set_mode((s_width, s_height)) #display window
 pygame.display.set_caption('Tetris')
 
 main_menu()  # start game
